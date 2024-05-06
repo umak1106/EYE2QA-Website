@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="BIRD-bench">
+  <meta name="author" content="">
+  <link rel="icon" href="./logo/Eye.png" type="image/x-icon">
+  <title>EYE2QA</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./style/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="./style/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./style/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="./style/clean-blog.min.css" rel="stylesheet">
+  <link href="./style/bird.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="masthead" id="header-color">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-md-12 mx-auto">
+          <div class="row site-heading flex-box">
+            <div class="col-lg-3">
+              <img id="logo-img" src="logo/Eye.png" alt="logo" />
+            </div>
+            <div class="col-lg-9">
+              <div class="align-middle">
+                <h1 id="bird-title">
+                  EYE2QA
+                </h1>
+                <span class="subheading" id="caption">A Leaderboard for Opthalmology Dataset EYE2QA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Main Content -->
+  <div class="container" id="main">
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="list-group">
+          <div class="list-group-item" id="introduction">
+            <!-- <div style="display: grid; grid-template-columns: auto auto; align-items: center;"> -->
+            <h4>About Eye2QA</h4>
+            <img src="https://badges.toozhao.com/badges/01HFXP6JKNBG5AW3Y5B95DK568/blue.svg" />
+            <!-- </div> -->
+            <p>
+              EYE2QA  represents
+              a pioneering, cross-domain dataset that examines the impact of extensive database contents on opthalmology
+              data
+              Eye2QA contains over <b>12,751</b>
+              unique question-SQL pairs, <b>95</b> big databases with a total size of <b>33.4 GB</b>.
+              It also covers more than <b>37</b> professional domains, such as blockchain, hockey, healthcare and
+              education, etc.
+            </p>
+            <div id="button-group">
+              <div class="button-row">
+                <a href="https://arxiv.org/pdf/2305.03111.pdf" target="_blank">
+                  <button type="button" class="btn  btn-a">Paper</button>
+                </a>
+              </div>
+              <div class="button-row">
+                <a href="https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/bird" target="_blank">
+                  <button type="button" class="btn btn-a">
+                    Code
+                  </button>
+                </a>
+              </div>
+              <div class="button-row" id="button-row-b">
+                <div class="btn-round">
+                  <a href="https://bird-bench.oss-cn-beijing.aliyuncs.com/train.zip" target="_blank">
+                    <button type="button" class="btn btn-b">Train Set</button>
+                  </a>
+                </div>
+                <div class="btn-round">
+                  <a href="https://bird-bench.oss-cn-beijing.aliyuncs.com/dev.zip" target="_blank">
+                    <button type="button" class="btn btn-b">🔥 Dev Set</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>  
+            .scroll-container {  
+              position: relative;  
+              width: 100%;  
+              max-height: 300px;  
+              overflow-y: scroll;  
+            }  
+              
+            /* Hide the scrollbar by default */  
+            .scroll-container::-webkit-scrollbar {  
+                width: 10px;  
+                background: transparent;
+            }  
+              
+            /* Set the scrollbar thumb color */  
+            .scroll-container::-webkit-scrollbar-thumb {  
+                background-color: #FFFFFF;  
+                border-radius: 5px;  
+            }  
+              
+            /* Show the scrollbar when the mouse is hovering over the scroll container */  
+            .scroll-container:hover::-webkit-scrollbar {  
+                width: 10px;  
+            }  
+              
+            .scroll-container:hover::-webkit-scrollbar-thumb:hover {  
+                background-color: #555;  
+            }  
+            
+          </style>
+          
+          <div class="list-group-item" id="news">
+            <h4>News</h4>
+            
+            <div class="scroll-container">  
+              <div class="card card-outline-secondary mb-4" style="text-align: left;">                      
+                  <div class="card-body" style="background-color: #F1F6F9;">  
+                      <ul style="padding-left: 0;">
+                          <li style="list-style-type: none;"><span style="background-color: #22A699; color: white; padding: 2px 4px; border-radius: 5px;"><strong style="color: #FFE7CE">Mar 13, 2024:</strong></span> Please also take a look at our related work: <a href="https://arxiv.org/abs/2403.05307">Tapilot-Crossing</a>, which is the first challenging and more realistic benchmark designed to evaluate Large Language Model (LLM) agents on interactive data analysis tasks. The code includes Python and Private Library. And it covers 6 common agent actions in evaluation.</li>
+                          <li style="list-style-type: none;"><span style="background-color: #22A699; color: white; padding: 2px 4px; border-radius: 5px;"><strong style="color: #FFE7CE">Sept 25, 2023:</strong></span> We have released a cleaner version of <code>dev set</code>. Please download dev set again. We checked all cases of dev set and fixed all errors that we found. After cleaning, the ChatGPT (gpt-3.5-turbo) and GPT4 (gpt-4-32k) EX scores have improved to <strong>42.24</strong> (from 37.22) and <strong>49.15</strong> (from 46.35), respectively. Thanks for all feedbacks!</li>
+                          <li style="list-style-type: none;"><span style="background-color: #4F709C; color: white; padding: 2px 4px; border-radius: 5px;"><strong style="color: #FFE7CE">Sept 21, 2023:</strong></span> Our paper has been accepted by <code><strong>NeurIPS 2023</strong></code> as a <code><strong>Spotlight</strong></code>!!! Thanks for all the efforts and suggestions of co-authors, anonymous reviewers, awesome researchers/users in github or emails.</li> 
+                          <li style="list-style-type: none;"><span style="background-color: #4F709C; color: white; padding: 2px 4px; border-radius: 5px;"><strong style="color: #F6F1F1">July 17, 2023:</strong></span> We update newest results of GPT-4, Claude-2 and Palm-2. </li>  
+                          <li style="list-style-type: none;"><span style="background-color: #4F709C; color: white; padding: 2px 4px; border-radius: 5px;"><strong style="color: #F6F1F1">July 14, 2023:</strong></span> The data link has been updated, fixing the schema names in the CSV files. Additionally, tied results caused by <code>order_by limit 1</code> are now considered. Both SQL queries - with and without accounting for tied results -  
+                              are valid at this time.</li>
+                          <li style="list-style-type: none;"><span style="background-color: #4F709C; color: white; padding: 2px 4px; border-radius: 5px;"><strong style="color: #F6F1F1">Jun 12, 2023:</strong></span> We are welcome to any suggestions and reported gold errors in <a href="https://github.com/AlibabaResearch/DAMO-ConvAI/issues/39">help_wanted</a>. Any of your help is appreciated!</li>
+                          <li style="list-style-type: none;"><span style="background-color: #4F709C; color: white; padding: 2px 4px; border-radius: 5px;"><strong style="color: #F6F1F1">Jun 5, 2023:</strong></span> We open-sourced our <a href="https://arxiv.org/abs/2301.07507">Graphix-T5</a>, a graph-aware semi-pretrained text-to-text PLM specifically designed to improve multi-hop reasoning for the complex text-to-SQL task.  
+                          <li style="list-style-type: none;"><span style="background-color: #4F709C; color: white; padding: 2px 4px; border-radius: 5px;"><strong style="color: #F6F1F1">May 30, 2023:</strong></span> If you are interested in ICL, please check out our interesting work <a href="https://arxiv.org/pdf/2305.13016.pdf">deep-thinking🤔.</a> Generate 1000 models for 1000 people smoothly!  
+                          </li>  
+                      </ul>  
+                  </div>  
+              </div>  
+            </div>
+          </div>
+          <div class="list-group-item" id="illustration">
+            <h4>Submission Guidelines for EYE2QA</h4>
+            <p>
+              <b>1. Large and Dirty values:</b> Due to the nature of the real-world scenarios from which EYE2QA's database
+              values were collected, they typically retain their original and frequently "dirty" format. Hence,
+              text-to-SQL parsers must first analyze these values to account for their non-standard format before
+              engaging in reasoning.
+              <br>
+              <b>2. External Knowledge:</b> "account.type = 'OWNER'" can be inferred by the knowledge evidence: "The
+              condition of the loans require the account type should be the owner."
+              <br>
+              <b>3. Text-to-Efficient-SQL:</b> EYE2QA is the first text-to-SQL benchmark designed to encourage semantic
+              parsers to produce SQL queries that are not only correct but also efficient. This emphasis on efficiency
+              is especially valuable in real-world data / business analysis circumstances.
+
+          </div>
+
+          <div class="list-group-item">
+            <h4>Submission</h4>
+            <p>Please follow the Submission Guideline (below) and contact <code>EYE2QA.bench23@gmail.com</code> for test evaluation. Ususally, we will return your results in 10 days!
+             
+            </p>
+            <style>  
+              .btn-a {  
+                border-radius: 25px; /* Adjust this value to change the roundness of the button */  
+              }  
+              .btn-a:hover {  
+                background-color: #22A699; /* Change the background color when the cursor is over the button */  
+              }  
+            </style>  
+            <div class="button-row">
+              <a href="https://docs.google.com/document/d/1Rs6d_pcs2vfqW4Ymub7Wb1XtBNlrc-WfH3T7U1ktuBo/edit?usp=sharing" target="_blank">
+                <button type="button" class="btn  btn-a">Submission Guidelines</button>
+              </a>
+            </div>
+          </div>
+          
+          <div class="list-group-item">
+            <h4>Subscribe to EYE2QA Update</h4>
+            <p>EYE2QA is a long-term research project aimed at bridging the gap between semantic parsing models and the success of database applications. To receive the latest updates of the dataset, you can leave your email address.
+            </p>
+            <form onsubmit="return submitForm();">  
+                <input type="email" id="email" name="email" placeholder="Email address" required>  
+                <button type="submit">Subscribe</button>  
+            </form>  
+            <p id="message"></p>  
+          </div> 
+          
+          <head>  
+              <meta charset="utf-8">  
+              <title>Email Subscription</title>  
+              <script>  
+                function submitForm() {  
+                  var email = document.getElementById("email").value;  
+                  var url = "https://script.google.com/macros/s/AKfycbynv6Ibnl9gJosprkRmXhbKtllZX8dqrbj_xQkcbZ_NgEDBxwyjz1xyvIvnm_4yPh3ZPA/exec";  
+                  var data = "email=" + encodeURIComponent(email);  
+                    
+                  fetch(url, {  
+                    method: "POST",  
+                    body: data,  
+                    headers: {  
+                      "Content-Type": "application/x-www-form-urlencoded"  
+                    }  
+                  })  
+                  .then(response => response.text())  
+                  .then(text => {  
+                    document.getElementById("message").innerHTML = "<i>Subscribe Successfully! Thanks for your attention!</i>";  
+                  })  
+                  .catch(error => {  
+                    console.error("Error:", error);  
+                  });  
+                    
+                  return false;  
+                }  
+              </script>  
+          </head>   
+          <div class="list-group-item">
+            <h4>Citation</h4>
+            <pre id="citation">
+@article{li2024can,
+  title={Can llm already serve as a database interface? a big bench for large-scale database grounded text-to-sqls},
+  author={Li, Jinyang and Hui, Binyuan and Qu, Ge and Yang, Jiaxi and Li, Binhua and Li, Bowen and Wang, Bailin and Qin, Bowen and Geng, Ruiying and Huo, Nan and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
+}</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        
+        <div class="card card-outline-secondary">
+          <div class="card-header">
+            Leaderboard - Execution Accuracy (EX)
+          </div>
+          <div class="table-wrapper">
+            <table class="table" id="ex-table">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col" rowspan="1"></th>
+                  <th scope="col" rowspan="1" class="align-middle text-center">Model</th>
+                  <th scope="col" rowspan="1" class="align-middle text-center">Code</th>
+                  <th scope="col" rowspan="1" class="align-middle text-center">Size</th>
+                  <th scope="col" rowspan="1" class="align-middle text-center">Oracle Knowledge</th>
+                  <th scope="col" colspan="1" class="text-center">Dev (%)</th>
+                  <th scope="col" colspan="1" class="text-center">Test (%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-success">
+                  <td scope="row" class="align-middle text-center"><br>
+                  </td>
+                  <td class="align-middle text-center">Human Performance<br>
+                    <span class="affiliation">Data Engineers + DB Students</span><br><a href="" class="paperlink"></a>
+                  </td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center">✔️</td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center"><b>92.96</b></td>
+                </tr>
+
+                <!-- <tr class="table-success">
+                  <td scope="row" class="align-middle text-center"><br>
+                  </td>
+                  <td class="align-middle text-center">Human Performance<br>
+                    <span class="affiliation">Data Engineers + DB Students</span><br><a href="" class="paperlink"></a>
+                  </td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center">✔️</td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center"><b>72.37</b></td>
+                </tr> -->
+
+                <tr>
+                  <td scope="row" class="align-middle text-center counter-cell">
+                    <span class="badge badge-secondary">Jan 14, 2024</span>
+                  </td>
+                  <td class="align-middle text-center">MCS-SQL + GPT-4<br>
+                    <span class="affiliation">Dunamu</span>
+                  </td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center">UNK</td>
+                  <td class="align-middle text-center">✔️</td>
+                  <td class="align-middle text-center">63.36</td>
+                  <td class="align-middle text-center"><b>65.45</b></td>
+                </tr>
+                
+                <tr>
+                  <td scope="row" class="align-middle text-center counter-cell">
+                    <span class="badge badge-secondary">Apr 08, 2024</span>
+                  </td>
+                  <td class="align-middle text-center">OpenSearch-SQL,v1 + GPT-4<br>
+                    <span class="affiliation">Alibaba Cloud</span>
+                  </td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center">UNK</td>
+                  <td class="align-middle text-center">✔️</td>
+                  <td class="align-middle text-center">61.34</td>
+                  <td class="align-middle text-center">64.95</td>
+                </tr>
+
+                <tr>
+                  <td scope="row" class="align-middle text-center counter-cell">
+                    <span class="badge badge-secondary">Feb 27, 2024</span>
+                  </td>
+                  <td class="align-middle text-center">PB-SQL, v1<br>
+                    <span class="affiliation">Seoul National University</span>
+                  </td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center">UNK</td>
+                  <td class="align-middle text-center">✔️</td>
+                  <td class="align-middle text-center">60.50</td>
+                  <td class="align-middle text-center">64.84</td>
+                </tr>
+
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+
+    </div>
+
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="./js/clean-blog.min.js"></script>
+  </div>
+
+<footer class="bg-body-tertiary text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2024 Copyright:
+    <a class="text-body" href="https://mdbootstrap.com/">EYE2QA</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+</body>
+
+</html>
